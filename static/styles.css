@@ -1,0 +1,78 @@
+
+thead{
+    background-color: #171f70;
+    color: azure;
+    position: sticky;
+    top: 0;
+}
+
+
+
+h1{
+    color:blue;
+}
+#table{
+    width: 100%;
+    height: 100px;
+    box-shadow: 1px 1px 5px 0px #121212;
+    padding-top: 10px;
+}
+#tables{
+    white-space: nowrap;
+}
+.child{
+    display: inline-block;
+    padding: 20px;
+}
+#new{
+    text-decoration: none;
+    color: #121212;
+}
+#new:hover{
+    color: 
+    rgba(255, 0, 0, 0.789);
+}
+.navbar *{
+    color: aliceblue;
+}
+
+
+/* .nav-link:visited{
+    color: aliceblue;
+} */
+
+/* nav:hover{
+    color: red;
+} */
+
+
+
+.dropdown-item {
+    color: black;
+}
+
+
+.navbar{
+    --bs-navbar-hover-color: red;
+    --bs-navbar-brand-hover-color: rgba(255, 0, 0, 0.9);
+}
+.nav-link:focus{
+    color: red;
+}
+
+body{
+    background-color:#121212;
+    color:aliceblue;
+  }
+  .background{
+    height: 5rem;
+    width: 100%;
+    text-align:center;
+  }
+  #form{
+    width: 40%;
+    justify-content: left;
+    height: 500px;
+    margin: 2rem;
+    background-color:rgb(41, 37, 42)
+  }

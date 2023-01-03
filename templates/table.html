@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block title %}
+Create a table
+{% endblock %}
+
+{% block main %}
+<div id="Tables">
+    <p class="child">Tables</p>
+    <i class="fa-sharp fa-solid fa-circle-plus"></i>
+    <a id="new" style="padding: 5px;" href="/table" >New Table</a>
+</div>
+<div id="table">
+    <form action="/table" method="post">
+    <table class="table table-bordered" id="table2">
+    <thead>
+    <tr>
+        <th scope="col" style="width: 5%"></th>
+        <th style="width: 30%;">Name</th>
+        <th style="width: 20%;"> Data Type</th>
+        <th style="width: 5%;">Unique</th>
+        <th scope="width: 40%">Label</th>
+    </tr>
+    </thead>
+    
+    <tr id="rowToClone" onclick="addEdit(this)">
+        <td></td>
+        <td>            
+                <input style="width: 100%;" type="text" id="1" name="name" onfocus="addRow(this.id)">
+    
+        </td>
+        <td>
+            <select class="form-control" id="exampleFormControlSelect1" name="data">
+                <option selected disabled>Select Data-Type</option>
+                <option>NULL</option>
+                <option>Interger</option>
+                <option>Real</option>
+                <option>Text</option>
+                <option>Blob</option>
+              </select>
+        </td>
+        <td style="text-align:center; vertical-align:middle;">
+            <div class="form-check">
+                <input style= "vertical-align:middle;" type="checkbox" value="" id="defaultCheck1">
+        </td>
+    </tr>
+    <input type="submit" value="Save Table">
+</table>
+</form>
+</div>
+{% endblock %}

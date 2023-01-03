@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block title %}
+Index
+{% endblock %}
+{% block main %}
+
+
+    <div id="Tables">
+        <p class="child">Tables</p>
+        <i class="fa-sharp fa-solid fa-circle-plus"></i>
+        <a id="new" style="padding: 5px;" href="/table" >New Table</a>
+    </div>
+    <div id="table">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th style="width: 60%;">Name</th>
+            <th style="width: 10%;"> Records</th>
+            <th style="width: 10%;">Size</th>
+            <th scope="col">Last Modified</th>
+        </tr>
+        </thead>
+    </table>
+    <p style="text-align: center; font-weight: bold;">No tables exist. You can create one now, or import from a file.</p>
+    </div>
+    {% endblock %}
